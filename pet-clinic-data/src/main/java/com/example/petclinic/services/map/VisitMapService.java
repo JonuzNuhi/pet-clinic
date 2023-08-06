@@ -2,9 +2,11 @@ package com.example.petclinic.services.map;
 
 import com.example.petclinic.model.Visit;
 import com.example.petclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
     @Override
@@ -23,7 +25,7 @@ public class VisitMapService extends AbstractMapService<Visit, Long> implements 
                 || visit.getPet().getOwner().getId() == null){
             throw new RuntimeException("Invalid Visit");
         }
-        return save(visit);
+        return super.save(visit);
     }
 
     @Override
