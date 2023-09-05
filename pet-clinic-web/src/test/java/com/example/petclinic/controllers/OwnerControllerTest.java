@@ -90,8 +90,6 @@ class OwnerControllerTest {
                 .andExpect(model().attribute("selections", hasSize(2)));;
     }
 
-
-
     @Test
     void displayOwners() throws Exception {
         when(ownerService.findById(anyLong())).thenReturn((Owner.builder().id(1L).build()));

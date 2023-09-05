@@ -1,5 +1,9 @@
 com\example\petclinic\PetClinicApplication.class
 com\example\petclinic\bootstrap\DataLoader.class
 com\example\petclinic\controllers\VetController.class
+com\example\petclinic\controllers\VisitController.class
 com\example\petclinic\controllers\OwnerController.class
 com\example\petclinic\controllers\IndexController.class
+com\example\petclinic\formatter\PetTypeFormatter.class
+com\example\petclinic\controllers\VisitController$1.class
+com\example\petclinic\controllers\PetController.class
